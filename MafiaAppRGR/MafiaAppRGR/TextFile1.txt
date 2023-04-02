@@ -1,0 +1,57 @@
+﻿<Label Text="Игрок номер 1" Margin="20" HorizontalOptions="Center" FontSize="30"/>
+
+        <Label x:Name="TimerText" Text="0:00" FontSize="90" HorizontalOptions="Center"/>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            
+            <Button x:Name="StartTimer" Text="Старт"/>
+            <Button x:Name="StopTimer" Text="Стоп"/>
+        </StackLayout>
+
+        <Button x:Name="TeamButton" Text="Сыграл"/>
+        <Button x:Name="FoulButton" Text="Фолы"/>
+        <Button x:Name="PutButton" Text="Выставил"/>
+        <Button x:Name="SkipButton" Text="Пасс"/>
+
+        <StackLayout x:Name="PlayerButtons" Orientation="Horizontal">
+
+        int _pageState = 0;
+
+        TeamButtons _teamButtons = null;
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            TeamButton.Clicked += TeamButton_Clicked;
+            FoulButton.Clicked += FoulButton_Clicked;
+            PutButton.Clicked += PutButton_Clicked;
+        }
+
+        private void FoulButton_Clicked(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void PutButton_Clicked(object sender, EventArgs e)
+        {
+            
+        }
+
+        int _teamButtonstate = 0;
+        private void TeamButton_Clicked(object sender, EventArgs e)
+        {
+            if (_teamButtonstate == 0 && _pageState == 0)
+            {
+                _teamButtonstate = 1;
+                _pageState = 1;
+                PlayerButtons.Children.Add();
+            }
+            
+            if(_teamButtonstate == 1)
+            {
+
+            }
+        }
