@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MafiaAppRGR.Pages.GamePages
+namespace MafiaAppRGR
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NightPage : ContentPage

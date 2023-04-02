@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MafiaAppRGR.Components
+namespace MafiaAppRGR
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Timer : ContentView
