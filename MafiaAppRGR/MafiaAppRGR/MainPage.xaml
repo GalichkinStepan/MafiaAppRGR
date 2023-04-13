@@ -4,8 +4,10 @@
              x:Class="MafiaAppRGR.MainPage">
 
     <StackLayout>
-        
-        
+        <Button Text="Новый бланк" Clicked="ToInitPage"/>
+        <Button Text="Новая игра"/>
+        <Button Text="Разадача карт"/>
+        <Button Text="История игр"/>
     </StackLayout>
 
 

@@ -10,10 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace MafiaAppRGR
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-
-    public partial class BlankPage : ContentPage
+    public partial class InitPage1 : ContentPage
     {
-        public BlankPage()
+        int _nextPage;
+        Game _game = new Game();
+        Entry[] _entries;
+        public InitPage1()
         {
             InitializeComponent();
         }

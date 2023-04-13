@@ -1,10 +1,19 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 
 namespace MafiaAppRGR
 {
     public partial class MainPage : ContentPage
     {
-        int _pageState = 0;
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        private async void ToInitPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new InitPage());
+        }
     }
 }
