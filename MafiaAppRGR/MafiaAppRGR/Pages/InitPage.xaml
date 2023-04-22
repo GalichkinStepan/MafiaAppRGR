@@ -13,7 +13,7 @@
                     <StackLayout x:Name="PlayersEntry">
 
                     </StackLayout>
-                    <Button/>
+                    <Button Clicked="SaveNicknames"/>
                 </StackLayout>
             </ScrollView>
         </StackLayout>

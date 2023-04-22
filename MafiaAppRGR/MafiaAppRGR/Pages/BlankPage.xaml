@@ -4,9 +4,21 @@
              x:Class="MafiaAppRGR.BlankPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
+            <Label Text="Игра"
                 HorizontalOptions="CenterAndExpand" />
+
+            <StackLayout Orientation="Horizontal">
+                <ScrollView >
+                    <StackLayout x:Name="PlayersSV">
+                        
+                    </StackLayout>
+                </ScrollView>
+                <StackLayout>
+                    <Label/>
+                    <Button/>
+                    <Button/>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
